@@ -1,0 +1,15 @@
+name: primera
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-cambios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print PrimeraAutomatizacion
+        run: echo "Automatizacion, GitHub Action!"
